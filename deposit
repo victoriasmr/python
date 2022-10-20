@@ -1,0 +1,9 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = 100000
+tkb = int(money // 100 * per_cent["ТКБ"])
+skb = int(money // 100 * per_cent["СКБ"])
+vtb = int(money // 100 * per_cent["ВТБ"])
+sber = int(money // 100 * per_cent["СБЕР"])
+deposit = tkb, skb, vtb, sber
+print("Депозит = ", deposit)
+print("Максимальная сумма, которую Вы можете заработать = ",max(deposit))
